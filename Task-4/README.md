@@ -8,9 +8,10 @@
 ``` bash
 # install dependencies
 npm install
-
+```
 
 ## Run test
 # run test from root directory
 ``` bash
 $ ./node_modules/.bin/wdio wdio.conf.js
+```
