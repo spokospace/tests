@@ -1,0 +1,113 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+$bg-color: #ebe8e8;
+$light-font-weight: 300;
+
+body {
+  font-family: $font-stack;
+  color: $primary-color;
+  background-color: $bg-color;
+}
+
+h1 {
+    font-weight: $light-font-weight;
+}
+
+
+// Books Listing
+.books-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book {
+    flex: 0 0 100%;
+
+    @media (min-width: 960px) {
+        flex: 0 0 50%;
+    }
+
+    &__content {
+        background: #fff;
+        box-shadow: 3px 3px 5px rgba(#888888,.3);
+        margin: 5px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        display: flex;
+
+        strong {
+            font-size: 1.5rem;
+            font-weight: $light-font-weight;
+        }
+
+        small {
+            display: block;
+            margin-left: auto;
+            &:before {
+                content: attr(data-content)':';
+                margin-right: .25rem;
+                opacity: .5;
+            }
+        }
+    }
+
+    &__description {
+        margin-top: .5rem;
+
+        small {
+            display: block;
+            color: rgba($primary-color, .5);
+        }
+    }
+
+    &__price {
+        margin-left: auto;
+
+        small {
+            color: rgba($primary-color, .5);
+            text-transform: lowercase;
+        }
+    }
+}
+
+
+// Add Book Form
+.add-book {
+    margin: 50px 5px 5px 5px;
+    padding: 5px 10px;
+    background-color: #fff;
+
+    h2 {
+        font-weight: $light-font-weight;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        .form-control {
+            border: 0;
+            max-width: 500px;
+            background-color: $bg-color;
+            padding: 10px;
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            background-color: transparent;
+            border: 1px solid rgb(0, 174, 255);
+            border-radius: 0;
+            padding: 10px 15px;
+            max-width: 520px;
+            font-weight: $light-font-weight;
+            font-size: 1.75rem;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+    }
+}

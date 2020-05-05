@@ -1,0 +1,6 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+# app_page_tantis:
+#     path: /tantis
+#     controller: App\Controller\PageController::number

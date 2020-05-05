@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Tantis!{% endblock %}</title>
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('tantis') }}
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}
+            <h1>Books List:</h1>
+            <p>Your book for today is {{ number }}</p>
+            <div id="tantis-books"></div>
+            <div id="add-book"></div>
+        {% endblock %}
+        {% block javascripts %}
+            {{ encore_entry_script_tags('tantis') }}
+        {% endblock %}
+    </body>
+</html>
