@@ -1,6 +1,7 @@
 # Simple CRUD in Symfony 5 based on Encore with Vue and Axios
 
 > A simple Book List
+
 Demo: https://books.spoko.space/
 
 ## Build Setup
