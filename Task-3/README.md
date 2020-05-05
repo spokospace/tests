@@ -9,6 +9,12 @@
 npm install
 ```
 
+## Migrations:
+``` bash
+php bin/console make:migration
+php bin/console doctrine:migrations:migrate
+```
+
 ## Run watch files
 ``` bash
 yarn encore dev --watch
