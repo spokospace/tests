@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css">
+    <style>
+        body {
+            overflow-y: scroll;
+        }
+        .btn,
+        .form-control,
+        .list-group-item {
+            border-radius: 0 !important;
+            box-shadow: none !important;
+        }
+        
+        .display-4 {
+            font-size: 2.8rem;
+        }
+
+        @media (min-width: 768px) {
+            .form-control {
+                min-width: 300px;
+            }
+        }
+    </style>
+    <title>GitHub Repo Search</title>
+</head>
+<body>
+    <div class="container py-2">
+        <div class="row">
+            <div class="display-4 col-12">GitHub Repo Search</div>
+            <form class="col-12 form-inline mb-2" id="form">
+                <input class="form-control" type="text" id="query" placeholder="Type name of repo to search..." required>
+                <button class="btn btn-outline-primary mt-2 mt-md-0 ml-md-2" id="log">Search</button>
+            </form>
+            <div class="col-12">
+                <ul class="list-group" id="results"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
