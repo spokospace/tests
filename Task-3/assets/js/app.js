@@ -32,12 +32,22 @@ new Vue({
                 .catch(function (error) {
                     console.log(error)
                 })
-        }
+        },
+        deleteBook(bookId) {
+            axios.delete('/book/delete/'+bookId)
+                .then(res => {
+                    this.remove = res.data.status;
+                    document.getElementById(bookId).remove();
+                })
+                .catch(function (error) {
+                    console.log(error)
+                })
+        },
     },
     template: `
         <div class="books-list">
-            <div class="book" v-for="item in books">
-                <div :data-id=item.id class="book__content">
+            <div class="book" v-for="item in books" :id=item.id>
+                <div  class="book__content">
                     <div class="book__title">
                         <strong>{{item.title}}</strong>
                         <small data-content="author">{{item.author}}</small>
@@ -52,6 +62,9 @@ new Vue({
                         <small>Price:</small>
                         <strong>{{item.price}}</strong> PLN
                     </div>
+                    <button @click="deleteBook(item.id)" class="book__remove">
+                        Delete
+                    </button>
                 </div>
             </div>
         </div>`
@@ -71,7 +84,8 @@ new Vue({
           description: '',
           price: '',
           code: '',
-          output: ''
+          output: '',
+          remove: '',
         };
     },
     methods: {

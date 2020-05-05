@@ -28,13 +28,14 @@ JSON source:
 <img src="https://github.com/CNK001/tests/blob/master/Task-3/DOCS/request-examples/add-book.png?raw=true">
 ### 
 
+### Delete book:
+<img src="https://github.com/CNK001/tests/blob/master/Task-3/DOCS/request-examples/book-delete-front.png?raw=true">
+JSON source:
+<img src="https://github.com/CNK001/tests/blob/master/Task-3/DOCS/request-examples/book-delete.png?raw=true">
+
 
 
 ## TODO:
-
-### Delete book (TODO):
-JSON source:
-<img src="https://github.com/CNK001/tests/blob/master/Task-3/DOCS/request-examples/book-delete.png?raw=true">
 
 ### Update book (TODO):
 JSON source:

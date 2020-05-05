@@ -72,6 +72,22 @@ h1 {
             text-transform: lowercase;
         }
     }
+
+    &__remove {
+        border: 1px solid $primary-color;
+        outline: none;
+        background: #fff;
+        max-width: 60px;
+        padding: 5px 10px;
+
+        &:hover,
+        &:focus,
+        &:active {
+            outline: none;
+            background-color: #888888;
+            color: #fff;
+        }
+    }
 }
 
 
