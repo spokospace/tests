@@ -1,6 +1,17 @@
-# Simple CRUD in Symfony 5 based on Encore with Vue and Axios
+# Simple CRUD in Symfony 5.0.8 based on Encore with Vue and Axios
 
 > A simple Book List
+
+Demo: https://books.spoko.space/
+
+## Requirements:
+Symfony 5.08+
+
+PHP 7.3.11+
+
+Composer 1.10.5+
+
+Node v12.16.3+ (it's recommended to use nvm for switching node version)
 
 ## Build Setup
 
